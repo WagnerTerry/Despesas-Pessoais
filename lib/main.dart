@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
         appBar: AppBar(
           title: Text('Despesas Pessoais'),
         ),
-        body: const Column(
+        body: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -45,8 +45,26 @@ class MyHomePage extends StatelessWidget {
                 child: Text('Gráfico'),
               ),
             ),
-            Card(
-              child: Text('Lista de Transações'),
+            Column(
+              children: _transactions.map((tr) {
+                return Card(
+                  child: Row(
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.symmetric(
+                            horizontal: 15, vertical: 10),
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black, width: 2)),
+                        padding: const EdgeInsets.all(10),
+                        child: Text(tr.value.toString()),
+                      ),
+                      Column(
+                        children: [Text(tr.title), Text(tr.date.toString())],
+                      )
+                    ],
+                  ),
+                );
+              }).toList(),
             )
           ],
         ));
