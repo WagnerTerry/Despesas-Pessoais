@@ -4,14 +4,20 @@ import 'dart:math';
 import 'components/transaction_list.dart';
 import 'models/transaction.dart';
 
-main() => runApp(const ExpensesApp());
+main() => runApp(ExpensesApp());
 
 class ExpensesApp extends StatelessWidget {
-  const ExpensesApp({Key? key}) : super(key: key);
+  ExpensesApp({Key? key}) : super(key: key);
+  final ThemeData tema = ThemeData();
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: MyHomePage(),
+      theme: tema.copyWith(
+          colorScheme: tema.colorScheme.copyWith(
+        primary: Colors.purple,
+        secondary: Colors.amber,
+      )),
       debugShowCheckedModeBanner: false,
     );
   }
