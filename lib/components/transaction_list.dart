@@ -20,7 +20,7 @@ class TransactionList extends StatelessWidget {
                 SizedBox(height: 20),
                 Text(
                   'Nenhuma Transação Cadastrada!',
-                  style: Theme.of(context).textTheme.titleLarge,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
                 SizedBox(height: 20),
                 SizedBox(
@@ -55,7 +55,7 @@ class TransactionList extends StatelessWidget {
                       ),
                     ),
                     title: Text(tr.title,
-                        style: Theme.of(context).textTheme.titleLarge),
+                        style: Theme.of(context).textTheme.headline6),
                     subtitle: Text(DateFormat('d MMM y').format(tr.date)),
                   ),
                 );
