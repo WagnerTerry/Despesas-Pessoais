@@ -1,16 +1,10 @@
-# expenses
+# Expenses
 
-A new Flutter project.
+App para despesas pessoais, curso Cod3r
 
-## Getting Started
+## Fotos do jogo
 
-This project is a starting point for a Flutter application.
+![despesas1](https://github.com/WagnerTerry/Despesas-Pessoais/blob/main/assets/tela1.png)
+![despesas2](https://github.com/WagnerTerry/Despesas-Pessoais/blob/main/assets/tela2.png)
+![despesas3](https://github.com/WagnerTerry/Despesas-Pessoais/blob/main/assets/tela3.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
